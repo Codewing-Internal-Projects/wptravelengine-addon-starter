@@ -27,23 +27,19 @@ A powerful Composer package to quickly scaffold WP Travel Engine addon plugins w
 Install as a WP-CLI package to create addons directly in your WordPress plugins directory:
 
 ```bash
-wp package install wptravelengine/addonstarter
+wp package install https://github.com/Codewing-Internal-Projects/wptravelengine-addon-starter.git
 ```
 
-**If the normal install doesn't work, install from the GitHub repository:**
-
-```bash
-wp package install https://github.com/Aayushkalikote/wptravelengine-addon-starter.git
-```
+Then use the `wptravelengine-addon-starter` command from your terminal.
 
 ### Method 2: Global Composer Command (Recommended for Package Developers)
 
-This package is **not published on Packagist**. Install it globally from the private GitHub repository as a VCS source.
+This package is **not published on Packagist**. Install it globally from the GitHub repository as a VCS source.
 
 **Step 1 — Register the VCS repository in your global Composer config:**
 
 ```bash
-composer global config repositories.wptravelengine-addonstarter vcs https://github.com/Aayushkalikote/wptravelengine-addon-starter.git
+composer global config repositories.wptravelengine-addonstarter vcs https://github.com/Codewing-Internal-Projects/wptravelengine-addon-starter.git
 ```
 
 **Step 2 — Require the package globally:**
@@ -74,7 +70,7 @@ composer global config --global --auth github-oauth.github.com YOUR_GITHUB_TOKEN
 Alternatively, use SSH by registering the repo with its SSH URL:
 
 ```bash
-composer global config repositories.wptravelengine-addonstarter vcs git@github.com:Aayushkalikote/wptravelengine-addon-starter.git
+composer global config repositories.wptravelengine-addonstarter vcs git@github.com:Codewing-Internal-Projects/wptravelengine-addon-starter.git
 ```
 
 Then ensure your SSH key has access to the repository.
@@ -407,7 +403,7 @@ wp package list
 If not listed, reinstall:
 
 ```bash
-wp package install wptravelengine/addonstarter
+wp package install https://github.com/Codewing-Internal-Projects/wptravelengine-addon-starter.git
 ```
 
 ### Permission denied
@@ -455,8 +451,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/wptravelengine/wptravelengine-addon-starter/issues)
-- **Documentation**: [GitHub Wiki](https://github.com/wptravelengine/wptravelengine-addon-starter/wiki)
+- **Issues**: [GitHub Issues](https://github.com/Codewing-Internal-Projects/wptravelengine-addon-starter/issues)
+- **Documentation**: [GitHub Wiki](https://github.com/Codewing-Internal-Projects/wptravelengine-addon-starter/wiki)
 
 ## License
 
@@ -472,5 +468,3 @@ GPL-3.0-or-later
 ---
 
 **Made with ❤️ by WP Travel Engine Team**
-
-# wptravelengine-addon-starter

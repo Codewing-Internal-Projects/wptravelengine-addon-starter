@@ -427,6 +427,11 @@ chmod +x ~/.config/composer/vendor/bin/wptravelengine-addon-starter
 
 ## Changelog
 
+### 0.0.4
+
+- Fixed: `bundle` script and Grunt `build` task now run i18n (POT/JSON generation) before copying files into the bundle, so shipped zips include up-to-date translation files.
+- Fixed: `makepot`/`make-pot` exclude lists now also skip `bundle/`, `build/`, and `dist/` output directories, preventing generated artifacts from polluting the `.pot` file.
+
 ### 0.0.3
 
 - New Feature: Added Pro config Composer repository for Pro-compatible addon scaffolds.

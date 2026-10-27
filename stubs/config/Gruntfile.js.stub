@@ -30,7 +30,7 @@ module.exports = function(grunt) {
             target: {
                 options: {
                     domainPath: '/languages',
-                    exclude: ['\.git/*', 'bin/*', 'node_modules/*', 'tests/*'],
+                    exclude: ['\.git/*', 'bin/*', 'bundle/*', 'build/*', 'dist/*', 'node_modules/*', 'tests/*'],
                     mainFile: '{{FULL_SLUG}}.php',
                     potFilename: '{{FULL_SLUG}}.pot',
                     potHeaders: { poedit: true, 'x-poedit-keywordslist': true },
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['i18n'])
     grunt.registerTask('i18n', ['addtextdomain', 'makepot'])
-    grunt.registerTask('build', ['clean:bundle', 'copy:bundle', 'i18n'])
+    grunt.registerTask('build', ['clean:bundle', 'i18n', 'copy:bundle'])
     grunt.registerTask('bundle', ['build', 'compress:bundle'])
 
     grunt.util.linefeed = '\n'

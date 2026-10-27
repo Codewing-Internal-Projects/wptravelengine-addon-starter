@@ -27,6 +27,12 @@ A powerful Composer package to quickly scaffold WP Travel Engine addon plugins w
 Install as a WP-CLI package to create addons directly in your WordPress plugins directory:
 
 ```bash
+wp package install wptravelengine/addonstarter
+```
+
+**If the normal install doesn't work, install from the GitHub repository:**
+
+```bash
 wp package install https://github.com/Aayushkalikote/wptravelengine-addon-starter.git
 ```
 
@@ -410,7 +416,7 @@ wp package list
 If not listed, reinstall:
 
 ```bash
-wp package install https://github.com/Aayushkalikote/wptravelengine-addon-starter.git
+wp package install wptravelengine/addonstarter
 ```
 
 ### Permission denied

@@ -3,10 +3,10 @@
     "description": "Composer Package to scaffold WP Travel Engine addon plugins with customizable setup options.",
     "type": "wp-cli-package",
     "license": "GPL-3.0-or-later",
-    "homepage": "https://github.com/Codewing-Internal-Projects/wptravelengine-addon-starter",
+    "homepage": "https://github.com/Aayushkalikote/wptravelengine-addon-starter",
     "support": {
-        "issues": "https://github.com/Codewing-Internal-Projects/wptravelengine-addon-starter/issues",
-        "source": "https://github.com/Codewing-Internal-Projects/wptravelengine-addon-starter"
+        "issues": "https://github.com/Aayushkalikote/wptravelengine-addon-starter/issues",
+        "source": "https://github.com/Aayushkalikote/wptravelengine-addon-starter"
     },
     "authors": [
         {

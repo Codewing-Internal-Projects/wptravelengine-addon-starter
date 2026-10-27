@@ -16,7 +16,7 @@ A powerful Composer package to quickly scaffold WP Travel Engine addon plugins w
 
 - PHP 7.4 or higher (PHP 8.0+ recommended)
 - Composer 2.0 or higher
-- WP Travel Engine 6.8.0 or higher (for generated addons)
+- Internet access to wordpress.org when scaffolding (generated addons require and test against the latest WP Travel Engine release; falls back to 6.8.0 offline)
 
 **Note**: While this package supports PHP 7.4+, PHP 8.0 or higher is recommended for better performance and compatibility.
 
@@ -160,6 +160,9 @@ wptravelengine-paystack-payment/
 ├── composer.json                         # Composer config
 ├── package.json                          # NPM config
 ├── phpcs.xml                            # Coding standards
+├── LICENSE.txt                          # GPLv2 (bundled in zip)
+├── .wpte-tools/                         # metadata.yml + changelog.yml for release sync
+├── .github/workflows/release.yml        # prepare-addon, release, EDD deploy
 └── includes/
     ├── Plugin.php                       # Main plugin class
     ├── Payment.php                      # Payment gateway class
@@ -190,6 +193,10 @@ wptravelengine-trip-difficulty-level/
 ├── composer.json
 ├── package.json
 ├── phpcs.xml
+├── LICENSE.txt
+├── .wpte-tools/
+│   ├── metadata.yml
+│   └── changelog.yml
 ├── webpack.config.js
 ├── includes/
 │   ├── Plugin.php
